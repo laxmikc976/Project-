@@ -1,0 +1,29 @@
+body{
+    background-color:rgb(174, 174, 241);
+    background-size:cover;
+}
+.btn{
+    display: inline-block;
+    background: #434eeb;
+    color: #f3f0f0;
+    padding:8px 90px;
+    margin: 50px 0;
+    border-radius: 60px;
+    transition:background 0.5s;
+}
+.btn:hover{
+    background: #fbe07e;
+}
+.inbox-button
+{
+    display: inline-block;
+    padding:10px;
+    background-color:yellow;
+    color:rgb(246, 95, 95);
+    text-decoration:none;
+    border-radius:6px;
+}
+.inbox-button:hover
+{
+    background-color:blueviolet
+}
