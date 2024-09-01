@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Example</title>
+
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Add to cart.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="df70fc7f957c5811ff783ad0efdd4966.jpg" alt="Logo">
+        </div>
+        <div class="cart-container">
+            <div class="cart-icon" onclick="toggleCart()">
+                <h2>Items: <span id="cart-count">0</span></h2>
+                <img src="OIP.jpeg" alt="Cart Icon"> <!-- Replace with your cart icon image URL -->
+            </div>
+            <div class="cart-dropdown" id="cart-dropdown">
+                <div id="cart-items">Your cart is empty</div>
+                <div class="cart-footer">
+                    <h3>Total:</h3>
+                    <h2 id="cart-total">$0.00</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cart-item">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$0.00</h2>
+            </div>
+
+            <button onclick="openPaymentModal()">Pay</button>
+
+            <!-- Order History Section -->
+            <div class="order-history">
+                <h3>Order History</h3>
+                <div id="order-history-items">
+                    <!-- Orders will be dynamically populated here -->
+                </div>
+            </div>
+
+            <!-- Tracking History Section -->
+            <div class="tracking-history">
+                <h3>Tracking History</h3>
+                <div id="tracking-history-items">
+                    <!-- Tracking information will be dynamically populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closePaymentModal()">&times;</span>
+            <h2>Confirm Payment</h2>
+            <p>Please select a payment method and confirm your payment.</p>
+            <div class="payment-options-modal">
+                <label><input type="radio" name="payment-modal" value="credit-card"> Credit Card</label><br>
+                <label><input type="radio" name="payment-modal" value="paypal"> PayPal</label><br>
+                <label><input type="radio" name="payment-modal" value="bank-transfer"> Bank Transfer</label>
+            </div>
+            <button onclick="confirmPayment()">Confirm Payment</button>
+        </div>
+    </div>
+
+    <!-- Payment Successful Modal -->
+    <div id="payment-success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closePaymentSuccessModal()">&times;</span>
+            <h2>Payment Successful</h2>
+            <p>Your payment has been successfully processed.</p>
+            <button onclick="closePaymentSuccessModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="Add to cart.js"></script>
+</body>
+</html>
