@@ -7,4 +7,4 @@ Colors influence mood and perception. Interior designers select color schemes ba
 
 # Lighting Design: 
 Lighting is crucial for both functionality and ambiance. Designers use a combination of ambient, task, and accent lighting to enhance the mood, highlight features, and ensure adequate illumination.
-visit our site: https://graceful-kulfi-10e0c4.netlify.app
+visit our site:  https://effortless-otter-00f266.netlify.app
